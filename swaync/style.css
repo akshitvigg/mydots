@@ -1,0 +1,70 @@
+
+* {
+    color: #ebdbb2; /* foreground */
+}
+
+.blank-window {
+    background: transparent;
+}
+
+.notification-action,
+.notification-default-action,
+.control-center {
+    border-radius: 0.75em;
+    border: 2px solid rgba(142, 192, 124, 0.3); /* green border */
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.notification {
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+.notification-content {
+    margin: 5px;
+}
+
+.control-center .notification-row {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.widget-dnd {
+    font-weight: bold;
+    margin: 1em;
+}
+
+.widget-dnd > switch {
+    border: 1px solid rgba(142, 192, 124, 0.3);
+    border-radius: 0.75em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1px;
+}
+
+.widget-dnd > switch slider {
+    border: 1px solid rgba(142, 192, 124, 0.3);
+    border-radius: 0.75em;
+    background: rgb(15, 15, 15);
+    box-shadow: none;
+}
+
+.widget-mpris {
+    border-radius: 0.75em;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 1em;
+}
+
+.widget-buttons-grid {
+    margin: 1em;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    box-shadow: none;
+    color: #ebdbb2;
+    font-style: normal;
+    border: 1px solid rgba(142, 192, 124, 0.3);
+    background: #1d2021;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background: black;
+}
