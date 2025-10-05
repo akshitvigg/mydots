@@ -6,12 +6,13 @@ return {
     priority = 1000, -- make sure it's loaded first
     config = function()
       require("gruvbox").setup({
-        contrast = "hard",
+        contrast = "soft",
+        transparent_mode = true,
         overrides = {
-          Normal = { bg = "#000000" },
-          NormalNC = { bg = "#000000" },
-          FloatBorder = { bg = "#000000" },
-          VertSplit = { bg = "#000000" },
+          Normal = { bg = "none" },
+          NormalNC = { bg = "none" },
+          FloatBorder = { bg = "none" },
+          VertSplit = { bg = "none" },
         },
       })
       -- Apply colorscheme here
