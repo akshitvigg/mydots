@@ -10,13 +10,15 @@
     "hyprland/workspaces",
     "custom/media"
   ],
-  "modules-center": [],
+  "modules-center": [
+    "clock"
+  ],
   "modules-right": [
     "pulseaudio",
     "tray",
+    "memory",
     "backlight",
     "battery",
-    "clock",
     "power-profiles-daemon",
     "custom/power"
   ],
