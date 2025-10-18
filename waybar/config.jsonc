@@ -8,7 +8,8 @@
   // Choose the order of the modules
   "modules-left": [
     "hyprland/workspaces",
-    "custom/media"
+    "custom/media",
+    "custom/pacman"
   ],
   "modules-center": [
     "clock"
@@ -90,13 +91,11 @@
   //     // }
   // },
   "clock": {
-    // "timezone": "America/New_York",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "format": "{:L%a %d - %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "memory": {
-    "format": "{} MB",
-    "format-digits": 1
+    "format": "  {used:0.1f}Gi"
   },
   // "temperature": {
   //     // "thermal-zone": 2,
@@ -129,7 +128,7 @@
     },
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
+    "format-charging": "{capacity}%  ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module

@@ -14,7 +14,8 @@
       "2": "#98971a"
     },
     "padding": {
-      "top": 2,
+      "left": 2,
+      "top": 4,
       "right": 6
     }
   },
@@ -22,6 +23,7 @@
     "separator": " "
   },
   "modules": [
+    "break",
     "break",
     {
       "type": "title",
