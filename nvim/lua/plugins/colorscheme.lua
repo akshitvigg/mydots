@@ -1,22 +1,24 @@
--- lua/colorscheme.lua
+-- ~/.config/nvim/lua/plugins/colorscheme.lua
 return {
   {
-    "ellisonleao/gruvbox.nvim",
-    lazy = false, -- load immediately
-    priority = 1000, -- make sure it's loaded first
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
     config = function()
-      require("gruvbox").setup({
-        contrast = "soft",
-        transparent_mode = true,
-        overrides = {
-          Normal = { bg = "none" },
-          NormalNC = { bg = "none" },
-          FloatBorder = { bg = "none" },
-          VertSplit = { bg = "none" },
-        },
+      local tokyotheme = require("tokyonight")
+      tokyotheme.setup({
+        style = "storm",
+        transparent = true,
+        on_colors = function(colors)
+          colors.fg_gutter = "#656875"
+          colors.comment = "#6893ac"
+        end,
+        on_highlights = function(highlights, colors)
+          highlights["@comment"] = { fg = "#6893ac", italic = true }
+          highlights.CursorLineNr = { fg = "#86bddd" }
+        end,
       })
-      -- Apply colorscheme here
-      vim.cmd([[colorscheme gruvbox]])
+      vim.cmd("colorscheme tokyonight")
     end,
   },
 }
